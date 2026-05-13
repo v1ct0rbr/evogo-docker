@@ -48,7 +48,7 @@ services:
       AMQP_SPECIFIC_EVENTS: ""
       SERVER_PORT: ${SERVER_PORT}
       CLIENT_NAME: evolution
-      GLOBAL_API_KEY: sua-chave-segura-aqui
+      GLOBAL_API_KEY: ${GLOBAL_API_KEY}
       POSTGRES_AUTH_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/evogo_auth?sslmode=disable
       POSTGRES_USERS_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/evogo_users?sslmode=disable
       DATABASE_SAVE_MESSAGES: "false"
